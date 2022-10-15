@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Email from "./components/Email"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+return (
+<div className="App">
+  <div class="main_container">
+    <div class="img">
     </div>
-  );
+    <div class="form">
+      <p class="title">Welcome</p>
+      <p class="heading">Login In Your Account To Continue</p> <br />
+      <Email />
+      <section className="icons">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </section>
+
+    </div>
+  </div>
+
+</div>
+);
 }
 
 export default App;
